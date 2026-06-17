@@ -81,8 +81,8 @@ canvas { max-height: 260px; }
 <div class="header">
   <h1>New Deposit Report — 各品牌新舊版分析</h1>
   <div class="meta">
-    <span>Nova88 / Goal123 / Bwing：2026/01/01 起</span>
-    <span>12bet：2026/05/21 起（新版上線日）</span>
+    <span>Nova88 / Bwing：2026/01/01 起</span>
+    <span>Goal123 / 12bet：2026/05/21 起（新版上線日）</span>
     <span>資料來源：DepositInfo DB + GA4</span>
     <span>產製日期：2026/06/17</span>
   </div>
@@ -105,10 +105,10 @@ canvas { max-height: 260px; }
       <div class="val">68–87%</div>
       <div class="sub">各幣別區間，VND 最高</div>
     </div>
-    <div class="kpi">
+    <div class="kpi good">
       <div class="label">Goal123 新版用戶佔比</div>
-      <div class="val">25.4%</div>
-      <div class="sub">5月才上線，仍以舊版為主</div>
+      <div class="val">94.5%</div>
+      <div class="sub">VND，5/21 起正確區間</div>
     </div>
     <div class="kpi good">
       <div class="label">Bwing 新版用戶佔比</div>
@@ -117,8 +117,8 @@ canvas { max-height: 260px; }
     </div>
     <div class="kpi warn">
       <div class="label">12bet INR 回流率</div>
-      <div class="val">15.1%</div>
-      <div class="sub">最高回流，操作時間新版略慢</div>
+      <div class="val">8.6%</div>
+      <div class="sub">各幣別最高回流，操作時間新版略慢</div>
     </div>
   </div>
 
@@ -180,7 +180,7 @@ canvas { max-height: 260px; }
   <div id="goal" class="section">
     <div class="site-header">
       <div class="section-title">Goal123</div>
-      <span class="site-badge">SiteId = 2 · n8xprod · 2026/01起</span>
+      <span class="site-badge">SiteId = 2 · n8xprod · 2026/05/21起</span>
     </div>
     <div class="chart-grid" style="margin-bottom:24px">
       <div class="chart-wrap">
@@ -197,10 +197,10 @@ canvas { max-height: 260px; }
         <tr><th>幣別</th><th>總用戶</th><th>新版用戶</th><th>新版%</th><th>舊版用戶</th><th>舊版%</th><th>回流用戶</th><th>回流%</th><th>舊版操作時間</th><th>新版操作時間</th><th>趨勢</th></tr>
       </thead>
       <tbody>
-        <tr><td>🇻🇳 VND</td><td>11,525</td><td>2,930</td><td>25.4%</td><td>8,595</td><td>74.6%</td><td>58</td><td>1.9%</td><td>34.7s</td><td>41.3s</td><td class="trend-up">▲ +19%</td></tr>
+        <tr><td>🇻🇳 VND</td><td>3,011</td><td>2,845</td><td>94.5%</td><td>166</td><td>5.5%</td><td>43</td><td>1.4%</td><td>26.2s</td><td>41.0s</td><td class="trend-up">▲ +57%</td></tr>
       </tbody>
     </table>
-    <p class="note">* Goal123 GA4 未追蹤 CurrencyId，操作時間為全體平均；新版 5月才上線</p>
+    <p class="note">* 統計區間 5/21 起（新版上線日）；GA4 操作時間為全體平均（mobileDepositsubmit + desktopDepositsubmit 加權）</p>
   </div>
 
   <!-- Bwing -->
@@ -241,14 +241,14 @@ canvas { max-height: 260px; }
         <tr><th>幣別</th><th>總用戶</th><th>新版用戶</th><th>新版%</th><th>舊版用戶</th><th>舊版%</th><th>回流用戶</th><th>回流%</th><th>舊版操作時間</th><th>新版操作時間</th><th>趨勢</th></tr>
       </thead>
       <tbody>
-        <tr><td>🇮🇳 INR</td><td>6,890</td><td>5,337</td><td>77.5%</td><td>1,553</td><td>22.5%</td><td>949</td><td class="trend-up">15.1%</td><td>48.4s</td><td>51.2s</td><td class="trend-up">▲ +6%</td></tr>
-        <tr><td>🇹🇭 THB</td><td>4,455</td><td>3,731</td><td>83.7%</td><td>724</td><td>16.3%</td><td>356</td><td>8.7%</td><td>231.6s</td><td>181.2s</td><td class="trend-dn">▼ -22%</td></tr>
-        <tr><td>🇻🇳 VND</td><td>6,713</td><td>6,050</td><td>90.1%</td><td>663</td><td>9.9%</td><td>214</td><td>3.4%</td><td>143.4s</td><td>165.6s</td><td class="trend-up">▲ +15%</td></tr>
-        <tr><td>🇲🇾 MYR</td><td>1,339</td><td>1,176</td><td>87.8%</td><td>163</td><td>12.2%</td><td>80</td><td>6.4%</td><td>82.8s</td><td>99.8s</td><td class="trend-up">▲ +21%</td></tr>
-        <tr><td>🇮🇩 IDR</td><td>1,495</td><td>1,330</td><td>89.0%</td><td>165</td><td>11.0%</td><td>75</td><td>5.3%</td><td>86.6s</td><td>91.7s</td><td class="trend-up">▲ +6%</td></tr>
-        <tr><td>🇨🇳 CNY</td><td>1,601</td><td>1,197</td><td>74.8%</td><td>404</td><td>25.2%</td><td>121</td><td>9.2%</td><td>575.9s</td><td>403.1s</td><td class="trend-dn">▼ -30%</td></tr>
-        <tr><td>🇧🇩 BDT</td><td>499</td><td>445</td><td>89.2%</td><td>54</td><td>10.8%</td><td>13</td><td>2.8%</td><td>48.8s</td><td>49.2s</td><td class="trend-eq">➡ 持平</td></tr>
-        <tr><td>🇰🇷 KRW</td><td>68</td><td>61</td><td>89.7%</td><td>7</td><td>10.3%</td><td>5</td><td>7.6%</td><td>170.5s</td><td>184.1s</td><td class="trend-up">▲ +8%</td></tr>
+        <tr><td>🇮🇳 INR</td><td>6,171</td><td>4,711</td><td>76.3%</td><td>1,460</td><td>23.7%</td><td>532</td><td class="trend-up">8.6%</td><td>48.4s</td><td>51.2s</td><td class="trend-up">▲ +6%</td></tr>
+        <tr><td>🇹🇭 THB</td><td>4,318</td><td>3,613</td><td>83.7%</td><td>705</td><td>16.3%</td><td>297</td><td>6.9%</td><td>231.6s</td><td>181.2s</td><td class="trend-dn">▼ -22%</td></tr>
+        <tr><td>🇻🇳 VND</td><td>6,217</td><td>5,636</td><td>90.6%</td><td>581</td><td>9.4%</td><td>163</td><td>2.6%</td><td>143.4s</td><td>165.4s</td><td class="trend-up">▲ +15%</td></tr>
+        <tr><td>🇲🇾 MYR</td><td>1,240</td><td>1,096</td><td>88.4%</td><td>144</td><td>11.6%</td><td>58</td><td>4.7%</td><td>83.0s</td><td>99.7s</td><td class="trend-up">▲ +20%</td></tr>
+        <tr><td>🇮🇩 IDR</td><td>1,391</td><td>1,243</td><td>89.4%</td><td>148</td><td>10.6%</td><td>44</td><td>3.2%</td><td>86.5s</td><td>91.7s</td><td class="trend-up">▲ +6%</td></tr>
+        <tr><td>🇨🇳 CNY</td><td>1,441</td><td>1,065</td><td>73.9%</td><td>376</td><td>26.1%</td><td>77</td><td>5.3%</td><td>574.9s</td><td>402.1s</td><td class="trend-dn">▼ -30%</td></tr>
+        <tr><td>🇧🇩 BDT</td><td>400</td><td>357</td><td>89.3%</td><td>43</td><td>10.8%</td><td>5</td><td>1.3%</td><td>48.8s</td><td>49.2s</td><td class="trend-eq">➡ 持平</td></tr>
+        <tr><td>🇰🇷 KRW</td><td>55</td><td>51</td><td>92.7%</td><td>4</td><td>7.3%</td><td>2</td><td>3.6%</td><td>170.4s</td><td>184.1s</td><td class="trend-up">▲ +8%</td></tr>
       </tbody>
     </table>
   </div>
@@ -275,16 +275,16 @@ const overviewData = [
   { brand:'Nova88', cur:'VND', total:7250, newPct:86.7, oldPct:13.3, swPct:1.5,  oldT:59.2, newT:33.4 },
   { brand:'Nova88', cur:'INR', total:322,  newPct:65.2, oldPct:34.8, swPct:15.7, oldT:48.8, newT:31.7 },
   { brand:'Nova88', cur:'BDT', total:2428, newPct:60.6, oldPct:39.4, swPct:5.6,  oldT:41.9, newT:52.8 },
-  { brand:'Goal123',cur:'VND', total:11525,newPct:25.4, oldPct:74.6, swPct:1.9,  oldT:34.7, newT:41.3 },
+  { brand:'Goal123',cur:'VND', total:3011,  newPct:94.5, oldPct:5.5,  swPct:1.4,  oldT:26.2, newT:41.0 },
   { brand:'Bwing',  cur:'VND', total:5835, newPct:100,  oldPct:0,    swPct:0,    oldT:null, newT:null },
-  { brand:'12bet',  cur:'INR', total:6890, newPct:77.5, oldPct:22.5, swPct:15.1, oldT:48.4, newT:51.2 },
-  { brand:'12bet',  cur:'THB', total:4455, newPct:83.7, oldPct:16.3, swPct:8.7,  oldT:231.6,newT:181.2 },
-  { brand:'12bet',  cur:'VND', total:6713, newPct:90.1, oldPct:9.9,  swPct:3.4,  oldT:143.4,newT:165.6 },
-  { brand:'12bet',  cur:'MYR', total:1339, newPct:87.8, oldPct:12.2, swPct:6.4,  oldT:82.8, newT:99.8  },
-  { brand:'12bet',  cur:'IDR', total:1495, newPct:89.0, oldPct:11.0, swPct:5.3,  oldT:86.6, newT:91.7  },
-  { brand:'12bet',  cur:'CNY', total:1601, newPct:74.8, oldPct:25.2, swPct:9.2,  oldT:575.9,newT:403.1 },
-  { brand:'12bet',  cur:'BDT', total:499,  newPct:89.2, oldPct:10.8, swPct:2.8,  oldT:48.8, newT:49.2  },
-  { brand:'12bet',  cur:'KRW', total:68,   newPct:89.7, oldPct:10.3, swPct:7.6,  oldT:170.5,newT:184.1 },
+  { brand:'12bet',  cur:'INR', total:6171, newPct:76.3, oldPct:23.7, swPct:8.6,  oldT:48.4, newT:51.2 },
+  { brand:'12bet',  cur:'THB', total:4318, newPct:83.7, oldPct:16.3, swPct:6.9,  oldT:231.6,newT:181.2 },
+  { brand:'12bet',  cur:'VND', total:6217, newPct:90.6, oldPct:9.4,  swPct:2.6,  oldT:143.4,newT:165.4 },
+  { brand:'12bet',  cur:'MYR', total:1240, newPct:88.4, oldPct:11.6, swPct:4.7,  oldT:83.0, newT:99.7  },
+  { brand:'12bet',  cur:'IDR', total:1391, newPct:89.4, oldPct:10.6, swPct:3.2,  oldT:86.5, newT:91.7  },
+  { brand:'12bet',  cur:'CNY', total:1441, newPct:73.9, oldPct:26.1, swPct:5.3,  oldT:574.9,newT:402.1 },
+  { brand:'12bet',  cur:'BDT', total:400,  newPct:89.3, oldPct:10.8, swPct:1.3,  oldT:48.8, newT:49.2  },
+  { brand:'12bet',  cur:'KRW', total:55,   newPct:92.7, oldPct:7.3,  swPct:3.6,  oldT:170.4,newT:184.1 },
 ];
 
 // Render overview table
@@ -340,22 +340,22 @@ new Chart(document.getElementById('chartNovaTime'), {
 
 // Goal chart
 new Chart(document.getElementById('chartGoalUsers'), {
-  type:'doughnut', data:{labels:['舊版','新版'],datasets:[{data:[8595,2930],backgroundColor:[OLD+'cc',NEW+'cc']}]},
+  type:'doughnut', data:{labels:['舊版','新版'],datasets:[{data:[166,2845],backgroundColor:[OLD+'cc',NEW+'cc']}]},
   options:{responsive:true,plugins:{legend:{position:'bottom'}}}
 });
 new Chart(document.getElementById('chartGoalTime'), {
   type:'bar', data:{labels:['VND'],datasets:[
-    {label:'舊版(s)',data:[34.7],backgroundColor:OLD+'cc',borderRadius:4},
-    {label:'新版(s)',data:[41.3],backgroundColor:NEW+'cc',borderRadius:4}
+    {label:'舊版(s)',data:[26.2],backgroundColor:OLD+'cc',borderRadius:4},
+    {label:'新版(s)',data:[41.0],backgroundColor:NEW+'cc',borderRadius:4}
   ]}, options:baseOpts()
 });
 
 // 12bet charts
 const cur12 = ['INR','THB','VND','MYR','IDR','CNY','BDT','KRW'];
-const new12 = [5337,3731,6050,1176,1330,1197,445,61];
-const old12 = [1553,724,663,163,165,404,54,7];
-const oldT12 = [48.4,231.6,143.4,82.8,86.6,575.9,48.8,170.5];
-const newT12 = [51.2,181.2,165.6,99.8,91.7,403.1,49.2,184.1];
+const new12 = [4711,3613,5636,1096,1243,1065,357,51];
+const old12 = [1460,705,581,144,148,376,43,4];
+const oldT12 = [48.4,231.6,143.4,83.0,86.5,574.9,48.8,170.4];
+const newT12 = [51.2,181.2,165.4,99.7,91.7,402.1,49.2,184.1];
 new Chart(document.getElementById('chart12Users'), {
   type:'bar', data:{labels:cur12,datasets:[
     {label:'舊版',data:old12,backgroundColor:OLD+'cc',borderRadius:3},
