@@ -197,7 +197,7 @@ canvas { max-height: 260px; }
         <tr><th>幣別</th><th>總用戶</th><th>新版用戶</th><th>新版%</th><th>舊版用戶</th><th>舊版%</th><th>回流用戶</th><th>回流%</th><th>舊版操作時間</th><th>新版操作時間</th><th>趨勢</th></tr>
       </thead>
       <tbody>
-        <tr><td>🇻🇳 VND</td><td>3,011</td><td>2,845</td><td>94.5%</td><td>166</td><td>5.5%</td><td>43</td><td>1.4%</td><td>26.2s</td><td>41.0s</td><td class="trend-up">▲ +57%</td></tr>
+        <tr><td>🇻🇳 VND</td><td>3,011</td><td>2,845</td><td>94.5%</td><td>166</td><td>5.5%</td><td>43</td><td>1.4%</td><td>30.9s</td><td>46.2s</td><td class="trend-up">▲ +49%</td></tr>
       </tbody>
     </table>
     <p class="note">* 統計區間 5/21 起（新版上線日）；GA4 操作時間為全體平均（mobileDepositsubmit + desktopDepositsubmit 加權）</p>
@@ -275,7 +275,7 @@ const overviewData = [
   { brand:'Nova88', cur:'VND', total:7250, newPct:86.7, oldPct:13.3, swPct:1.5,  oldT:59.2, newT:33.4 },
   { brand:'Nova88', cur:'INR', total:322,  newPct:65.2, oldPct:34.8, swPct:15.7, oldT:48.8, newT:31.7 },
   { brand:'Nova88', cur:'BDT', total:2428, newPct:60.6, oldPct:39.4, swPct:5.6,  oldT:41.9, newT:52.8 },
-  { brand:'Goal123',cur:'VND', total:3011,  newPct:94.5, oldPct:5.5,  swPct:1.4,  oldT:26.2, newT:41.0 },
+  { brand:'Goal123',cur:'VND', total:3011,  newPct:94.5, oldPct:5.5,  swPct:1.4,  oldT:30.9, newT:46.2 },
   { brand:'Bwing',  cur:'VND', total:5835, newPct:100,  oldPct:0,    swPct:0,    oldT:null, newT:null },
   { brand:'12bet',  cur:'INR', total:6171, newPct:76.3, oldPct:23.7, swPct:8.6,  oldT:48.4, newT:51.2 },
   { brand:'12bet',  cur:'THB', total:4318, newPct:83.7, oldPct:16.3, swPct:6.9,  oldT:231.6,newT:181.2 },
@@ -345,8 +345,8 @@ new Chart(document.getElementById('chartGoalUsers'), {
 });
 new Chart(document.getElementById('chartGoalTime'), {
   type:'bar', data:{labels:['VND'],datasets:[
-    {label:'舊版(s)',data:[26.2],backgroundColor:OLD+'cc',borderRadius:4},
-    {label:'新版(s)',data:[41.0],backgroundColor:NEW+'cc',borderRadius:4}
+    {label:'舊版(s)',data:[30.9],backgroundColor:OLD+'cc',borderRadius:4},
+    {label:'新版(s)',data:[46.2],backgroundColor:NEW+'cc',borderRadius:4}
   ]}, options:baseOpts()
 });
 
